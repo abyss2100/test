@@ -1,0 +1,28 @@
+{
+	"name": "dataflowsample",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Json1",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "Json1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [],
+			"script": "source(output(\n\t\tglossary as (title as string, GlossDiv as (title as string, GlossList as (GlossEntry as (ID as string, SortAs as string, GlossTerm as string, Acronym as string, Abbrev as string, GlossDef as (para as string, GlossSeeAlso as string[]), GlossSee as string))))\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tdocumentForm: 'documentPerLine') ~> source2\nsource2 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tinput(\n\t\tglossary as (title as string, GlossDiv as (title as string, GlossList as (GlossEntry as (ID as string, SortAs as string, GlossTerm as string, Acronym as string, Abbrev as string, GlossDef as (para as string, GlossSeeAlso as string[]), GlossSee as string))))\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "JinDFTest1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ae6a5dc6-2dec-404e-874f-eff06bc300ef",
+		"tenantId": "7ba56cf6-1b3f-4365-8713-522a8d06122b"
+	}
+}
