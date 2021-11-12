@@ -1,0 +1,9 @@
+{
+	"name": "SQLtoADLS",
+	"properties": {
+		"description": "data flow from SQL to ADLS",
+		"annotations": [
+			"SQLtoADLS"
+		]
+	}
+}
