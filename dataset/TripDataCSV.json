@@ -1,0 +1,23 @@
+{
+	"name": "TripDataCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jinblobcontainerlink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "tripdata.csv",
+				"fileSystem": "jinblobcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
