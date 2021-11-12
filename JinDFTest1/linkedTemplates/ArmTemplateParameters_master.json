@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "JinDFTest1"
+		},
+		"AmazonS31_secretAccessKey": {
+			"value": ""
+		},
+		"AzureBlobJsonSource_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"jinblobcontainerlink_accountKey": {
+			"value": ""
+		},
+		"taxiDBlink_connectionString": {
+			"value": ""
+		},
+		"AmazonS31_properties_typeProperties_accessKeyId": {
+			"value": "AKIAU4U7CBI7FSDJZDML"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://ajintestlab9069.dfs.core.windows.net/"
+		},
+		"jinblobcontainerlink_properties_typeProperties_url": {
+			"value": "https://ajintestlab9069.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
