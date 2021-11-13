@@ -20,6 +20,12 @@
 		"taxiDBlink_connectionString": {
 			"value": ""
 		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"value": ""
+		},
+		"staging_accountKey": {
+			"value": ""
+		},
 		"AmazonS31_properties_typeProperties_accessKeyId": {
 			"value": "AKIAU4U7CBI7FSDJZDML"
 		},
@@ -27,6 +33,12 @@
 			"value": "https://ajintestlab9069.dfs.core.windows.net/"
 		},
 		"jinblobcontainerlink_properties_typeProperties_url": {
+			"value": "https://ajintestlab9069.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://jinkey.vault.azure.net/"
+		},
+		"staging_properties_typeProperties_url": {
 			"value": "https://ajintestlab9069.dfs.core.windows.net/"
 		}
 	}
