@@ -275,7 +275,8 @@
 						"linkedService": {
 							"referenceName": "staging",
 							"type": "LinkedServiceReference"
-						}
+						},
+						"folderPath": "jinblobcontainer/staging"
 					},
 					"compute": {
 						"coreCount": 8,
