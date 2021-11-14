@@ -1,10 +1,6 @@
 {
 	"name": "S3SourceFile",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AmazonS31",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
